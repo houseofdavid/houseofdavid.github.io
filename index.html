@@ -1,10 +1,184 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Site</title>
-  </head>
-  <body>
-    <h1>Hello 👋</h1>
-    <p>This is my GitHub Pages website.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Page Demo</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* GLOBAL STYLES */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #f7f7f7;
+      color: #222;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* NAVIGATION */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a:hover {
+      color: #007bff;
+      font-weight: 600;
+    }
+
+    /* HEADER / HERO SECTION */
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem;
+      background: #eef2f5;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: .5rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+    .hero .profile-pic {
+      width: 180px;
+      height: 180px;
+      margin: 1.5rem auto;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    /* ABOUT + DETAILS */
+    .section {
+      padding: 3rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .bio {
+      text-align: center;
+      font-size: 1.05rem;
+      color: #444;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    /* SOCIAL LINKS */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .social-links a {
+      font-size: 1.4rem;
+      color: #007bff;
+      transition: 0.2s;
+    }
+    .social-links a:hover {
+      transform: scale(1.1);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: .9rem;
+      color: #777;
+      border-top: 1px solid #ddd;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- HERO / HEADER -->
+  <section class="hero">
+    <img src="https://via.placeholder.com/180" alt="Profile Picture" class="profile-pic" />
+    <h1>First Lastname</h1>
+    <p>Web Developer • Designer • Content Creator</p>
+
+    <!-- SOCIAL LINKS -->
+    <div class="social-links">
+      <a href="#" aria-label="Website">🌐</a>
+      <a href="#" aria-label="GitHub">🐙</a>
+      <a href="#" aria-label="LinkedIn">💼</a>
+      <a href="#" aria-label="Twitter">🐦</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p class="bio">
+      I’m a passionate developer with experience in building responsive websites and engaging user experiences.
+      I specialize in HTML, CSS, and JavaScript and enjoy learning new web technologies. I love turning ideas into
+      clean and functional code.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <p style="text-align:center;">
+      HTML • CSS • JavaScript • React • UI/UX Design • Responsive Design
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2>Featured Projects</h2>
+    <ul style="list-style: none; text-align: center; font-size: 1.1rem;">
+      <li>• Project One — <a href="#">View</a></li>
+      <li>• Project Two — <a href="#">View</a></li>
+      <li>• Project Three — <a href="#">View</a></li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p style="text-align:center;">Email: <a href="mailto:you@example.com">you@example.com</a></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 — Built with ❤️.
+  </footer>
+</body>
 </html>
